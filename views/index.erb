@@ -1,6 +1,18 @@
-<h1>Marley Spoon Awesome Recipes!</h1>
+<div class="column is-half is-offset-one-quarter">
+  <h1 class="title is-size-3">Marley Spoon Awesome Recipes!</h1>
 
-<% @recipes.each do |recipe| %>
-  <h2><a href="<%= url("/#{recipe.id}") %>"><%= recipe.title %></a></h2>
-  <img src="<%= recipe.image_url %>" />
-<% end %>
+  <% @recipes.each do |recipe| %>
+    <a href="<%= url("/#{recipe.id}") %>">
+      <div class="card mb-4">
+        <div class="card-image">
+          <img src="<%= recipe.image_url %>" />
+        </div>
+        <header class="card-header">
+          <p class="card-header-title">
+            <%= recipe.title %>
+          </p>
+        </header>
+      </div>
+    </a>
+  <% end %>
+</div>

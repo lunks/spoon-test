@@ -1,5 +1,14 @@
-<h1><%= @recipe.title %> <%= if @recipe.chef_name != nil then "by #{@recipe.chef_name}"; end %></h1>
-<img src="<%= @recipe.image_url %>" />
-<div><%= @recipe.description %></div>
-<div>Tags: <%= if @recipe.tags.any? then @recipe.tags.join(", ") else "-"; end %></div>
-
+<div class="column is-half is-offset-one-quarter">
+  <a href="<%= url('/') %>">← Back to list of recipes</a>
+  <h1 class="title is-size-3">
+    <%= @recipe.title %>
+  </h1>
+  <h2 class="subtitle">
+    <%= if @recipe.chef_name != nil then "by #{@recipe.chef_name}"; end %>
+  </h2>
+  <img src="<%= @recipe.image_url %>" />
+  <div class="content"><%= @recipe.description %></div>
+  <% @recipe.tags.each do |tag| %>
+    <span class="tag"><%= tag %></span>
+  <% end %>
+</div>
