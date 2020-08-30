@@ -1,0 +1,6 @@
+<h1>Marley Spoon Awesome Recipes!</h1>
+
+<% @recipes.each do |recipe| %>
+  <h2><a href="<%= url("/#{recipe.id}") %>"><%= recipe.title %></a></h2>
+  <img src="<%= recipe.image_url %>" />
+<% end %>

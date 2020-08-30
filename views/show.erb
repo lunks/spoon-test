@@ -1,0 +1,5 @@
+<h1><%= @recipe.title %> <%= if @recipe.chef_name != nil then "by #{@recipe.chef_name}"; end %></h1>
+<img src="<%= @recipe.image_url %>" />
+<div><%= @recipe.description %></div>
+<div>Tags: <%= if @recipe.tags.any? then @recipe.tags.join(", ") else "-"; end %></div>
+
