@@ -16,7 +16,7 @@ $ bundle exec rackup config.ru
 Tests can be run with rspec:
 
 ```console
-bundle exec rspec spec
+$ bundle exec rspec spec
 ```
 
 This app can also be accessed live on https://spoon-test-recipes.herokuapp.com/
