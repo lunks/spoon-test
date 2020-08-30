@@ -1,0 +1,90 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://cdn.contentful.com/spaces/<SPACE_ID>/environments/master/entries?sys.id=4dT8tcb6ukGSIg2YyuGEOm
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      X-Contentful-User-Agent:
+      - sdk contentful.rb/2.15.4; platform ruby/2.5.5; os macOS/19;
+      Authorization:
+      - Bearer <ACCESS_TOKEN>
+      Content-Type:
+      - application/vnd.contentful.delivery.v1+json
+      Accept-Encoding:
+      - gzip
+      Connection:
+      - close
+      Host:
+      - cdn.contentful.com
+      User-Agent:
+      - http.rb/4.4.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - close
+      Content-Length:
+      - '1147'
+      Access-Control-Allow-Headers:
+      - Accept,Accept-Language,Authorization,Cache-Control,Content-Length,Content-Range,Content-Type,DNT,Destination,Expires,If-Match,If-Modified-Since,If-None-Match,Keep-Alive,Last-Modified,Origin,Pragma,Range,User-Agent,X-Http-Method-Override,X-Mx-ReqToken,X-Requested-With,X-Contentful-Version,X-Contentful-Content-Type,X-Contentful-Organization,X-Contentful-Skip-Transformation,X-Contentful-User-Agent,X-Contentful-Enable-Alpha-Feature
+      Access-Control-Allow-Methods:
+      - GET,HEAD,OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Etag
+      Access-Control-Max-Age:
+      - '86400'
+      Cf-Environment-Id:
+      - master
+      Cf-Environment-Uuid:
+      - 3e111988-d2b3-4647-a0a8-ed1215cbd839
+      Cf-Organization-Id:
+      - 0OxgeKaTWSWzTukWE0scEe
+      Cf-Space-Id:
+      - "<SPACE_ID>"
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/vnd.contentful.delivery.v1+json
+      Contentful-Api:
+      - cda_cached
+      Etag:
+      - W/"17983516014116016828"
+      Server:
+      - Contentful
+      X-Content-Type-Options:
+      - nosniff
+      X-Contentful-Region:
+      - us-east-1
+      X-Contentful-Route:
+      - "/spaces/:space/environments/:environment/entries"
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Sun, 30 Aug 2020 21:35:56 GMT
+      Via:
+      - 1.1 varnish
+      Age:
+      - '2930'
+      X-Served-By:
+      - cache-gig17020-GIG
+      X-Cache:
+      - HIT
+      X-Cache-Hits:
+      - '2'
+      Vary:
+      - Accept-Encoding
+      X-Contentful-Request-Id:
+      - 483ed106-e0b5-4a68-8f30-a019274c1d0f
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA91XW2/bNhR+z69g9bCHIrEly5Zk9ykNsqzItq5Lgi0bCoOWKJuxTCokZVcr8t93SMm2pEi2i75VARzxcsjvXL+jr2cIWTKX1gR9hVcYqDwlMLIuhcC5BXMv53qP4gonMO+YkVzSFAa2GSR0RZVesosxVWSlD/zXHFgc27jF3CRTHOqrtjuKyQoWPWEmt5h+pWxp6Tv3D9zOlvcl5jtzYmMDjbQ6y+Vgthnxpy9D39NabZ+X3bvRs3isQmYY3QcqnHnZ8ubuw3zwmGc31x9XlfN3wK6ZEnl1IRQEKxJdartYA9sJLuzRhe3fO+7EDSaDQc8dOf9UBbI06hIYOhPb6Y0DryZA2JoKzlaE6TuO27BQaYWlIqJpolPte12586gNBVlTSTkDdIOKaUPOFGAuXXYc96nYrirntkaAICGF0D6KO+EhTkwKEHbxcLcV2IWHFVOSRPuM0SFjKaoKmb8WEP7oakGiCAt0I2iSkEiPiSRoQ9VCvwuRoz8EzIg1kegn9B5LmlSjIV1wxU9y66nmuZSSqKbfi5jwnL9/CZ8/vv/58fLx6kbeZnP+2+PtcUOBmbigRFvCD4KKiyMiQ0FTVTjfetuwgmM7byfoAewRkYSGlGcShYWBMIvQnPMIPWc4oSpHM8ij6B1a4SVBochYuMgRZ0gtCOKZkjQiSMtwTnItCL/lKmV68R3CEawy2C2Q2nBE2VyQiEIAShTDHEZxgtfwkuqz36AP+mwKeLAk5xqVdlW6c5XxGMIS5OSGEIV0NAvIKaS43m2cXuhyboDNtGc1CC2S0PlCnSNBYjhwAVAQ44r0jCmm0xXOOWOYSjKdNnXksVHZWENfhcMFJYBET2aJoiuoHQBXUJnm52CIJILYnQm+YXDwvAzCAtd02kNXnC81jgR/KWAS9sTzN7XKhuf7Gl5UxWquttTzsnQeCEjDFftq3Syatdrr/rmO8ue7YGgH2adPyyXJ6cBbVoMSmKk1lz+Xs8Wq/v1saIqyMMkgNHdpZRUAtkS1p6pW5VrpqnVnURBKSmqhrIYZ2khLwz1IWw3lqwWvlOwwYG3n1levPWEdILCBPxmOemN/WOUjQHyAwrpEukms27IHiAyEviX89gRaCaRDlq1QmumDto/VTWrdepyOtJvadnGi8PxAbtSwdvBb2eiVSdjCcXAXwytDjGsyx2x/3zYPi/8m22BzwTg/aHZ1cGZrdr2m3kPZ5fqTkdvzg2/Iri6RHyW7viNid33Z3e2DMxjaCBidX7j+MA5CEhI39J14FIdROHbHtjsmth3Pxl6tT4J+z7R2DfrLhP4csvp9IN85kb1QxVj3WLLHiOpXPzf67cHSt217TMKRZ3vBcOb6MfzhGbQKnucFtuOP+yXm6UmYe0/pvNnfRURhmtRb1TLBJf1PK+WMh77rV8PW5K7R6ZXOZmlDI7XQkvbAfO7VH2tBdJMD66BDY7VK17VqY87VVv69rC/frXi9Hhfq9J9SUiuSlU+/WsugG4iXs5ez/wGJUYyGHA8AAA==
+  recorded_at: Sun, 30 Aug 2020 21:35:53 GMT
+recorded_with: VCR 6.0.0
