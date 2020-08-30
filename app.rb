@@ -4,6 +4,7 @@ Bundler.require(:default)
 require './recipe'
 
 class App < Sinatra::Base
+  register Sinatra::Glorify
   get '/' do
     @recipes = Recipe.all
     erb :index, layout: :main

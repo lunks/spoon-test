@@ -16,6 +16,10 @@ GEM
     ffi-compiler (1.0.1)
       ffi (>= 1.0.0)
       rake
+    glorify (0.5.0)
+      nokogiri
+      rdoc-rouge
+      sinatra
     hashdiff (1.0.1)
     http (4.4.1)
       addressable (~> 2.3)
@@ -28,9 +32,12 @@ GEM
     http-parser (1.2.1)
       ffi-compiler (>= 1.0, < 2.0)
     method_source (1.0.0)
+    mini_portile2 (2.4.0)
     multi_json (1.15.0)
     mustermann (1.1.1)
       ruby2_keywords (~> 0.0.1)
+    nokogiri (1.10.10)
+      mini_portile2 (~> 2.4.0)
     pry (0.13.1)
       coderay (~> 1.1)
       method_source (~> 1.0)
@@ -39,6 +46,12 @@ GEM
     rack-protection (2.0.8.1)
       rack
     rake (13.0.1)
+    rdoc (4.3.0)
+    rdoc-rouge (0.1.0)
+      rdoc (~> 4.0)
+      rouge (~> 0.3.0)
+    rouge (0.3.10)
+      thor
     rspec (3.9.0)
       rspec-core (~> 3.9.0)
       rspec-expectations (~> 3.9.0)
@@ -61,6 +74,7 @@ GEM
       rack (~> 2.0)
       rack-protection (= 2.0.8.1)
       tilt (~> 2.0)
+    thor (1.0.1)
     tilt (2.0.10)
     unf (0.1.4)
       unf_ext
@@ -76,6 +90,7 @@ PLATFORMS
 
 DEPENDENCIES
   contentful
+  glorify
   pry
   rspec
   shotgun

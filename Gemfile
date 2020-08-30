@@ -8,6 +8,7 @@ gem 'contentful'
 gem 'sinatra'
 gem 'pry'
 gem 'shotgun'
+gem 'glorify'
 
 
 group :test do

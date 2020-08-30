@@ -7,7 +7,7 @@
     <%= if @recipe.chef_name != nil then "by #{@recipe.chef_name}"; end %>
   </h2>
   <img src="<%= @recipe.image_url %>" />
-  <div class="content"><%= @recipe.description %></div>
+  <div class="content"><%= glorify @recipe.description %></div>
   <% @recipe.tags.each do |tag| %>
     <span class="tag"><%= tag %></span>
   <% end %>
