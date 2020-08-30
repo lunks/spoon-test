@@ -19,4 +19,6 @@ Tests can be run with rspec:
 bundle exec rspec spec
 ```
 
+This app can also be accessed live on https://spoon-test-recipes.herokuapp.com/
+
 That's it!
