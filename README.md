@@ -8,14 +8,14 @@ You need to set two environment variables used to access the Contentful API:
 
 To get the app running all you have to do is:
 
-```sh
+```console
 $ bundle install
 $ bundle exec rackup config.ru
 ```
 
 Tests can be run with rspec:
 
-```sh
+```console
 bundle exec rspec spec
 ```
 
